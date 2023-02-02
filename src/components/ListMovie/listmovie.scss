@@ -1,0 +1,51 @@
+.listmovie {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  margin-top: 10px;
+  
+  .movieContainer {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .containerTitle {
+        font-size: 18px;
+        font-weight: bold;
+    }
+    .items {
+      display: flex;
+      align-items: center;
+
+      .item {
+        display: flex;
+        align-items: center;
+        margin-right: 20px;
+        position: relative;
+      }
+    }
+  }
+}
+.listMovies {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 20px;
+
+  .movieCard {
+    width: 120px;
+    margin-right: 25px;
+    margin-bottom: 10px;
+    
+    .image {
+      width: 120px;
+
+    }
+    .movieTitle {
+      font-size: 16px;
+      margin-bottom: 5px;
+    }
+  }
+}
