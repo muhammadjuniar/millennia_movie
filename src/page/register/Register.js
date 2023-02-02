@@ -11,16 +11,12 @@ function Register() {
 
   const navigate = useNavigate();
 
-  const handleLogin = () => {
-    navigate("/home");
-  };
-
   return (
     <div className="register">
       <div className="loginContainer">
         <div className="right">
           <span className="title">Millennia Movie</span>
-          <form onSubmit={handleLogin}>
+          <form>
             <div className="loginInput">
               <input
                 type="text"
@@ -49,7 +45,7 @@ function Register() {
                 onChange={(e) => setRetypePassword(e.target.value)}
               />
             </div>
-            <button type="submit">Submit</button>
+            <button onClick={() => navigate("/")}>Submit</button>
             <button onClick={() => navigate("/")}>Cancel</button>
             {error && <span>Wrong Email or Password!</span>}
           </form>
